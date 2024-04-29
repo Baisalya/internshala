@@ -67,8 +67,8 @@ app.get('/topper', (req, res) => {
 
 
 
-// Start the server
+// PORT NO
 const port = 5000;
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server  http://localhost:${port}`);
 });

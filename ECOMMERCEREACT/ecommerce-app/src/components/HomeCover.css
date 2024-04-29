@@ -1,0 +1,46 @@
+/* HomeCover.css */
+
+.HomeCover {
+    position: relative;
+    height: 100vh;
+    background-image: url('./image/clothing-3.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .NavigationBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 10px 0;
+  }
+  
+  .NavigationBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .NavigationBar ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .NavigationBar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .Heading {
+    color: #fff; /* Heading text color */
+    font-size: 36px; /* Adjust font size as needed */
+  }
+  
+  .Subtitle {
+    color: #fff; /* Subtitle text color */
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: 10px; /* Add some space between heading and subtitle */
+  }
+  

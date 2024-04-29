@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1d1d; 
+}
+
+.logo {
+    background-image: linear-gradient(to right, yellow, rgb(221, 198, 68));
+    padding: 5px 10px;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+}
+.logotext {
+    font-family: 'cursive', cursive;
+    font-weight: bold;
+    background-image: linear-gradient(to right, yellow, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.user-actions button {
+    background-color: linear-gradient(to right, yellow, gold);
+    color: rgb(20, 17, 17);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart-icon {
+    color: linear-gradient(to right, yellow, gold);
+}
+.user-actions button:hover {
+    opacity: 0.8;
+}

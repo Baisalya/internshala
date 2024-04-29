@@ -1,0 +1,97 @@
+/* Slider.css */
+.slider {
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .slider-heading {
+    margin-top: 20px;
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .slider-item {
+    width: 250px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    padding: 0px; /* Add padding for content */
+  }
+  
+  .slider-item:last-child {
+    margin-right: 0;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .product-details {
+    padding: 5px;
+  }
+  
+  .product-details h2 {
+    margin-top: 0;
+  }
+  
+  .product-details p {
+    margin: 5px 0;
+  }
+  
+  .product-details button {
+    background-color: linear-gradient(to right, yellow, gold);
+    color: #050505;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .product-details button:hover {
+    background-color: #d7c51f;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .control-button {
+    background-color: #6f6f6a;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .control-button:hover {
+    background-color: #0056b3;
+  }
+  .add-to-cart-button {
+    background-color: #e1cb3a; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #dbe125; /* Button color on hover */
+  }
