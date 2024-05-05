@@ -1,0 +1,38 @@
+.container {
+  background-color: rgba(213, 66, 115, 0.603);
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.todolistcontent {
+  max-width: 600px; 
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.taskinputcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 10px;
+}
+
+.taskinputcontainer input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(78, 223, 78);
+}

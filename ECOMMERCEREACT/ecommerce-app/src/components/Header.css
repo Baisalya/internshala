@@ -20,19 +20,19 @@
     color: transparent;
 }
 
-.search-bar {
+.searchbar {
     display: flex;
     align-items: center;
 }
 
-.search-bar input[type="text"] {
+.searchbar input[type="text"] {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
 }
 
-.user-actions button {
+.useractions button {
     background-color: linear-gradient(to right, yellow, gold);
     color: rgb(20, 17, 17);
     border: none;
@@ -40,9 +40,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.cart-icon {
+.carticon {
     color: linear-gradient(to right, yellow, gold);
 }
-.user-actions button:hover {
+.useractions button:hover {
     opacity: 0.8;
 }

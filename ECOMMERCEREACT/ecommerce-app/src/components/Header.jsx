@@ -7,11 +7,11 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logotext">Ecommerce</div>
-            <div className="search-bar">
+            <div className="searchbar">
                 <input type="text" placeholder="Search..." />
                 <span className='logo'>Search</span>
             </div>
-            <div className="user-actions">
+            <div className="useractions">
                 <button className='logo'>Login</button>
                 <FontAwesomeIcon icon={faCartShopping} style={{ color: 'white' }} />
              </div>
