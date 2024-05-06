@@ -1,20 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const Top5 = () => {
-  // Dummy data for the table
-  const salesData = [
-    { id: 1, productName: "Laptop", quantity: 2, amount: 100 },
-    { id: 2, productName: "Phone", quantity: 5, amount: 80 },
-    { id: 3, productName: "Tv", quantity: 1, amount: 150 },
-  
-  ];
+  const [topSales, setTopSales] = useState([]);
+
+  useEffect(() => {
+    // Fetch top 5 sales data from the backend
+    const fetchTop5Sales = async () => {
+      try {
+        const response = await axios.get('http://localhost:3001/top5sales');
+        setTopSales(response.data); // Assuming response.data is an array of top 5 sales objects
+      } catch (error) {
+        console.error('Error fetching top 5 sales:', error);
+        // Handle error, show error message, etc.
+      }
+    };
+
+    fetchTop5Sales();
+  }, []);
 
   return (
     <div className="container">
-    <div className="row">
+      <div className="row">
         <div className="col-md-12 text-center">
           <h2>Top 5 Sales</h2>
-        </div></div>
+        </div>
+      </div>
       <table className="table table-striped">
         <thead className="thead-dark">
           <tr>
@@ -26,10 +37,10 @@ const Top5 = () => {
           </tr>
         </thead>
         <tbody>
-          {salesData.map((sale, index) => (
-            <tr key={index}>
+          {topSales.map((sale, index) => (
+            <tr key={sale._id}>
               <td>{index + 1}</td>
-              <td>{sale.id}</td>
+              <td>{sale.salesId}</td>
               <td>{sale.productName}</td>
               <td>{sale.quantity}</td>
               <td>{sale.amount}</td>
@@ -39,6 +50,6 @@ const Top5 = () => {
       </table>
     </div>
   );
-}
+};
 
 export default Top5;
